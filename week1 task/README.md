@@ -159,11 +159,11 @@ pip install numpy pandas matplotlib seaborn scikit-learn ipykernel
 
 ## Running the Project
 
-### Option 1: Using Visual Studio Code (Recommended)
+### Option 1: Using Visual Studio Code
 
 1. Open the project folder in **Visual Studio Code**.
 2. Install the **Python** and **Jupyter** extensions if they are not already installed.
-3. Create and activate a virtual environment (optional but recommended).
+3. Create and activate a virtual environment (optional).
 
 #### Windows
 
@@ -250,13 +250,3 @@ Lower MAE and RMSE indicate better prediction accuracy, while a higher R² score
 - Model evaluation
 - Data visualization
 - Feature importance analysis
-
----
-
-## Future Improvements
-
-- Hyperparameter tuning using GridSearchCV
-- Cross-validation
-- XGBoost and LightGBM implementation
-- Model deployment using Flask or Streamlit
-- Interactive dashboard for predictions
