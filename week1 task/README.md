@@ -17,7 +17,7 @@ The objective of this project is to predict a student's final grade (G3) based o
 
 ## Dataset
 
-**Source:** UCI Machine Learning Repository
+**Source:** [UC Irvine's Student Performace dataset](https://archive.ics.uci.edu/dataset/320/student+performance)
 
 Dataset: Student Performance Dataset
 
@@ -117,7 +117,7 @@ The notebook includes several visualizations:
 
 ## Technologies Used
 
-- Python 3.x
+- Python 3.13.1
 - NumPy
 - Pandas
 - Matplotlib
@@ -152,20 +152,62 @@ pip install -r requirements.txt
 or install manually:
 
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn
+pip install numpy pandas matplotlib seaborn scikit-learn ipykernel
 ```
 
 ---
 
 ## Running the Project
 
-Open Jupyter Notebook:
+### Option 1: Using Visual Studio Code (Recommended)
+
+1. Open the project folder in **Visual Studio Code**.
+2. Install the **Python** and **Jupyter** extensions if they are not already installed.
+3. Create and activate a virtual environment (optional but recommended).
+
+#### Windows
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+#### Linux/macOS
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+4. Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+5. Open `student_score_prediction.ipynb`.
+
+6. Select the Python interpreter (or the `.venv` environment) from the top-right corner.
+
+7. Click **Run All** to execute all notebook cells.
+
+---
+
+### Option 2: Using Jupyter Notebook
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Launch Jupyter Notebook:
 
 ```bash
 jupyter notebook
 ```
 
-Then open:
+Open:
 
 ```
 student_score_prediction.ipynb
@@ -218,11 +260,3 @@ Lower MAE and RMSE indicate better prediction accuracy, while a higher R² score
 - XGBoost and LightGBM implementation
 - Model deployment using Flask or Streamlit
 - Interactive dashboard for predictions
-
----
-
-## Author
-
-Machine Learning Internship Project
-
-Week 1 - Student Performance Prediction
